@@ -1,0 +1,37 @@
+{
+    "name": "jamesfairhurst/laravel-google-analytics-pageviews",
+    "description": "Track pageviews server side using the Google Analytics Measurement Protocol.",
+    "type": "library",
+    "keywords": [
+        "jamesfairhurst",
+        "laravel-google-analytics-pageviews"
+    ],
+    "homepage": "https://github.com/jamesfairhurst/laravel-google-analytics-pageviews",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Fairhurst",
+            "email": "info@jamesfairhurst.co.uk",
+            "homepage": "https://www.jamesfairhurst.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "~5.7.0|~5.8.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "JamesFairhurst\\LaravelGoogleAnalyticsPageviews\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JamesFairhurst\\LaravelGoogleAnalyticsPageviews\\PageviewsServiceProvider"
+            ]
+        }
+    }
+}
