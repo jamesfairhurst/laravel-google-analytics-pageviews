@@ -54,3 +54,9 @@ window.addEventListener("load",function(e){var t=new XMLHttpRequest;t.open("POST
 ```
 
 You can also explicitly disable tracking by adding `PAGEVIEWS_ENABLED=false` to your `.env` file which is useful to stop tracking locally.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
