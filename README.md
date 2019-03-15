@@ -2,6 +2,8 @@
 
 Don't want nasty tricksy Google Analytics JS tracking code on your site but still want to have some idea of pageviews? This package uses [Google's Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide) to record basic pageviews on your site. It uses a small chunk of Javascript to post page data via Ajax on window load which will get sent to Google using Guzzle.
 
+Currently available for Laravel 5.7 & 5.8, looking into older versions.
+
 ## Installation
 
 You can install the package via composer:
@@ -50,7 +52,7 @@ Next, add the `@pageviews` blade directive to any page you wish to track or in a
 `@pageviews` will add a small chunk of Javascript that will send a `POST` `XMLHttpRequest` request on `window.load` to a package controller action that will record the pageview using [Google's Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#page).
 
 ```
-window.addEventListener("load",function(e){var t=new XMLHttpRequest;t.open("POST","{{ route('pageviews.store') }}",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.send("dp=/home&dt=Home&ua=Mozilla/5.0&dr=https://example.com/home")});
+window.addEventListener("load",function(e){var t=new XMLHttpRequest;t.open("POST","{{ route('pageviews.store') }}",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.send("dp=/home&dt=Home&ua=Mozilla/5.0&dr=https://example.com")});
 ```
 
 You can also explicitly disable tracking by adding `PAGEVIEWS_ENABLED=false` to your `.env` file which is useful to stop tracking locally.
