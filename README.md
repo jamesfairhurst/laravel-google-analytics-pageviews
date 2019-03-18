@@ -1,5 +1,10 @@
 # Track Pageviews Server Side using Google Analytics
 
+[![Latest Version](https://img.shields.io/github/release/jamesfairhurst/laravel-google-analytics-pageviews.svg?style=flat-square)](https://github.com/jamesfairhurst/laravel-google-analytics-pageviews/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![StyleCI](https://github.styleci.io/repos/175612638/shield)](https://github.styleci.io/repos/175612638/shield)
+[![Total Downloads](https://img.shields.io/packagist/dt/jamesfairhurst/laravel-google-analytics-pageviews.svg?style=flat-square)](https://packagist.org/packages/jamesfairhurst/laravel-google-analytics-pageviews)
+
 Don't want nasty tricksy Google Analytics JS tracking code on your site but still want to have some idea of pageviews? This package uses [Google's Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide) to record basic pageviews on your site. It uses a small chunk of Javascript to post page data via Ajax on window load which will get sent to Google using Guzzle.
 
 Currently available for Laravel 5.7 & 5.8, looking into older versions.
