@@ -27,11 +27,10 @@ class PageviewController extends BaseController
                     'dh' => config('app.url'),
                 ]),
             ]);
-
-            // This will only fire if something is really wrong at Google. The collect post above
-        // won't throw an exception for any incorrect or missing data so verify the pageview
-        // is being collected via the realtime dashboard.
         } catch (\Exception $e) {
+            // This will only fire if something is really wrong at Google. The collect post above
+            // won't throw an exception for any incorrect or missing data so verify the pageview
+            // is being collected via the realtime dashboard.
             Log::error('PageviewController@store Google Analytics post collect error: '.$e->getMessage());
         }
     }
