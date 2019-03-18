@@ -5,7 +5,6 @@ namespace JamesFairhurst\LaravelGoogleAnalyticsPageviews;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use JamesFairhurst\LaravelGoogleAnalyticsPageviews\PageviewsViewComposer;
 
 class PageviewsServiceProvider extends ServiceProvider
 {
